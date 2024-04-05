@@ -117,6 +117,14 @@ input {
   width: 100%;
 }
 
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: inherit;
+}
+
 button {
   cursor: pointer;
 }
@@ -197,10 +205,42 @@ body {
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+.flex {
+  display: flex;
+}
+
+.form-pill {
+  border-radius: var(--radius-pill);
+  font-weight: bold;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
 
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
+.header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .logo {
+    img {
+      width: 200px;
+    }
+  }
+
+  .search-wrapper {
+    background-color: var(--surface);
+    color: var(--on-surface);
+    width: 25%;
+  }
+  .current-location-btn {
+    background-color: var(--primary);
+    color: var(--on-primary);
+  }
+}
 
 /*-----------------------------------*\
   #CURRENT WEATHER
