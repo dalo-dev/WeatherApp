@@ -216,6 +216,22 @@ body {
   gap: 1rem;
 }
 
+.card {
+  background-color: var(--surface);
+  border-radius: var(--radius-28);
+  padding: 20px;
+}
+
+.heading {
+  font-size: var(--heading);
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.title-2 {
+  font-size: var(--title-2);
+  margin-block-end: 12px;
+}
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -243,9 +259,51 @@ body {
 }
 
 /*-----------------------------------*\
+  #CONTAINERS
+\*-----------------------------------*/
+.main-container {
+  width: 100%;
+  max-width: 1600px;
+  padding: 16px;
+  margin-inline: auto;
+
+  .left-content {
+    width: 300px;
+  }
+}
+/*-----------------------------------*\
   #CURRENT WEATHER
 \*-----------------------------------*/
+.main-weather {
+  .main-info {
+    margin-bottom: 12px;
+    gap: 8px;
+    align-items: center;
 
+    .weather-icon {
+      margin-inline: auto;
+    }
+  }
+
+  .secondary-info {
+    border-top: 1px solid var(--outline);
+    margin-top: 16px;
+    padding-top: 16px;
+
+    .secondary-info-item {
+      gap: 8px;
+      align-items: center;
+
+      .item-text {
+        color: var(--on-surface-variant);
+      }
+    }
+
+    .secondary-info-item:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}
 /*-----------------------------------*\
   #HIGHLIGHTS
 \*-----------------------------------*/
