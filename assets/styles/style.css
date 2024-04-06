@@ -207,6 +207,7 @@ body {
 \*-----------------------------------*/
 .flex {
   display: flex;
+  align-items: center;
 }
 
 .form-pill {
@@ -220,12 +221,17 @@ body {
   background-color: var(--surface);
   border-radius: var(--radius-28);
   padding: 20px;
+  margin: 20px 0;
 }
 
 .heading {
   font-size: var(--heading);
   color: var(--white);
   line-height: 1.1;
+}
+
+.title-1 {
+  font-size: var(--title-1);
 }
 
 .title-2 {
@@ -301,6 +307,25 @@ body {
 
     .secondary-info-item:not(:last-child) {
       margin-bottom: 12px;
+    }
+  }
+}
+
+.days-forecast {
+  .forecast-list {
+    .forecast-item {
+      justify-content: space-between;
+      .forecast-temperature {
+        gap: 8px;
+        p {
+          font-size: var(--body-1);
+        }
+      }
+      > p {
+        font-size: var(--label-2);
+        font-weight: var(--weight-semiBold);
+        color: var(--on-surface-variant);
+      }
     }
   }
 }
