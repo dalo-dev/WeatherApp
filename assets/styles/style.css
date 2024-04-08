@@ -113,6 +113,7 @@ button {
   font: inherit;
 }
 
+form,
 input {
   width: 100%;
 }
@@ -274,7 +275,7 @@ body {
   margin-inline: auto;
 
   .left-content {
-    width: 300px;
+    width: 320px;
   }
 }
 /*-----------------------------------*\
