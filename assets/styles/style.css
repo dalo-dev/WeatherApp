@@ -316,6 +316,7 @@ body {
   .forecast-list {
     .forecast-item {
       justify-content: space-between;
+      padding: 4px 0;
       .forecast-temperature {
         gap: 8px;
         p {
